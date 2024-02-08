@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 42, 42);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+#stopwatch {
+    width: 45%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 8vw;
+    border-radius: 0.2em;
+    background: linear-gradient(359deg, #1c1c29, #ffffff);
+    box-shadow: 29px 50px 60px #232325, -8px -16px 45px #3d3d51;
+}
+
+#button {
+    display: flex;
+}
+
+#button button {
+    background-color: #3d3939;
+    border: none;
+    padding: 1em 2em;
+    margin: 0.5em 7px;
+    border-radius: 0.4em;
+    box-shadow: 1px 1px 5px 2px black;
+    color: #e0dcdc;
+    font-size: 2vw;
+}
+
+#button button:hover {
+    background-color: #292626;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    #stopwatch {
+        width: 90%;
+        font-size: 14vw;
+        height: 16vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    #button{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0rem;
+    }
+
+    #button button {
+        font-size: 4vw; 
+    
+    }
+}
+@media screen and (max-width: 316px){
+    #stopwatch {
+        width: 90%;
+        font-size: 14vw;
+        height: 11vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    #button{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0rem;
+    }
+
+    #button button {
+        font-size: 4vw; 
+    
+    }
+}
